@@ -47,6 +47,11 @@ An Easy To Use Process Herpaderping Library Tailored For Malware & Exploits.
     free(buffer); // buffer is allocated by malloc, don't forget to free it, You can change this to use a unique pointer instead.
 ```
 
+## Usage (Compiled Example)
+```
+$ Herpaderp.exe <SOURCE_FILE> <TARGET_FILE> <OVERWRITE_FILE>
+```
+
 ## Notes
 You may need to add size checks to ``herpaderp::overwriteWithBuffer``, Depending on your needs (OverwriteFileSize < TargetFileSize).
 
