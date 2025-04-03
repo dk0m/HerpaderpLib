@@ -41,4 +41,6 @@ int wmain(int argc, const wchar_t* argv[])
 
     if (herpaderp::succeeded(resInfo))
         printf("[+] Process Herpaderped!, Process PID: %ld\n", GetProcessId(resInfo.process));
+
+    free(buffer); // buffer is allocated by malloc, don't forget to free it, You can change this to use a unique pointer instead.
 }
